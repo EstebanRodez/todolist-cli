@@ -22,7 +22,7 @@ jobs:
     runs-on: ubuntu-latest
     services:
       postgres:
-        image: postgred:17.2
+        image: postgres:17.2
         env:
           POSTGRES_USER: ${{secrets.DB_USER}}
           POSTGRES_PASSWORD: ${{secrets.DB_PASSWORD}}
